@@ -53,7 +53,6 @@ services:
       dockerfile: ./../archipelago-build-dockerhub/Dockerfile.front
     environment:
       - 'REACT_APP_MIDDLEWARE_URL=http://localhost:3000/'
-      - REACT_APP_MAPBOX_ACCESS_TOKEN=MyMapBoxToken
       - PORT=4000
     volumes:
       - ./addOn:/archipelago/frontend/addOn
