@@ -50,7 +50,8 @@ services:
 
   frontend:
     build:
-      dockerfile: ./../archipelago-build-dockerhub/Dockerfile.front
+      context: ./../archipelago-build-dockerhub/
+      dockerfile: Dockerfile.front
     environment:
       - 'REACT_APP_MIDDLEWARE_URL=http://localhost:3000/'
       - PORT=4000
