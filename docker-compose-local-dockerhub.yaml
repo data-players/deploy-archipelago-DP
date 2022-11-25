@@ -21,7 +21,7 @@ services:
       - ./data/fuseki:/fuseki
 
   middleware:
-    image: dataplayers/archipelago-middleware:0.5
+    image: dataplayers/archipelago-middleware:0.6
     depends_on:
       - fuseki
       - redis
@@ -46,7 +46,7 @@ services:
       - '3000:3000'
 
   frontend:
-    image: dataplayers/archipelago-frontend:0.5
+    image: dataplayers/archipelago-frontend:0.6
     environment:
       - 'REACT_APP_MIDDLEWARE_URL=http://localhost:3000/'
       - PORT=4000

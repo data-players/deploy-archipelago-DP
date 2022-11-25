@@ -169,6 +169,5 @@ module.exports = [
   },
   {
     path: '/files',
-    newResourcesPermissions: writePermissionsToCreator
   }
 ];
